@@ -1,0 +1,170 @@
+.header{
+	padding: 10px 0px ;
+	background: #6b6b6b;
+	border-bottom: 3px solid white;
+	width: 100%;
+	
+	text-align: center;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	
+}
+
+.prop{
+	display: inline-block;
+	width: 300px;
+}
+
+.item_block{
+	padding: 40px 50px ;
+	background: #435A6B;
+	border-bottom: 3px solid white;
+	width: 100%;
+	
+	text-align: center;
+	box-sizing: border-box;
+	
+}
+
+.item_block a{
+	color: #FFFFFF;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 20px;
+	
+}
+
+/*init a style for different browse*/
+.item_block a:visited,.item_block a:hover,.item_block a:link{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+
+/*link style1 */
+.style_1 a::before,.style_1 a::after{
+	display: inline-block;
+	box-sizing: border-box;
+	font-family: 'Raleway';
+	width: 3px;
+	
+	/*初始透明度为0*/
+	opacity: 0;
+	
+	/*初始位置位移0*/
+	transform: translateX(0px);
+	-ms-transform:translateX(0px); 	/* IE 9 */
+	-moz-transform:translateX(0px); 	/* Firefox */
+	-webkit-transform:translateX(0px); /* Safari 和 Chrome */
+	-o-transform:translateX(0px); 	/* Opera */
+	
+	/*动画*/
+	transition: opacity 0.2s ,transform 0.3s ease;
+	-ms-transition:opacity 0.2s ,-ms-transform 0.3s ease; 	/* IE 9 */
+	-moz-transition:opacity 0.2s ,-moz-transform 0.3s ease; 	/* Firefox */
+	-webkit-transition:opacity 0.2s ,-webkit-transform 0.3s ease; /* Safari 和 Chrome */
+	-o-transition:opacity 0.2s ,-o-transform 0.3s ease; 	/* Opera */
+	
+	
+}
+
+.style_1 a::before{
+	content: '[';
+}
+
+.style_1 a::after{
+	content: ']';
+}
+
+.style_1 a:hover::before{
+	
+	opacity: 1;
+	/*位移*/
+	transform: translateX(-20px);
+	-ms-transform:translateX(-20px); 	/* IE 9 */
+	-moz-transform:translateX(-20px); 	/* Firefox */
+	-webkit-transform:translateX(-20px); /* Safari 和 Chrome */
+	-o-transform:translateX(-20px); 	/* Opera */
+	
+	
+}
+
+.style_1 a:hover::after{
+	
+	opacity: 1;
+	/*位移*/
+	transform: translateX(20px);
+	-ms-transform:translateX(20px); 	/* IE 9 */
+	-moz-transform:translateX(20px); 	/* Firefox */
+	-webkit-transform:translateX(20px); /* Safari 和 Chrome */
+	-o-transform:translateX(20px); 	/* Opera */
+}
+
+
+/*超链接按钮形状*/
+.style_2 a{
+	line-height: 33px;
+	
+}
+
+/*初始状态*/
+.style_2 a span{
+	  position: relative;
+	  display: inline-block;
+	  padding: 0 20px;
+	  background: #2195de; 
+	  -webkit-transition: -webkit-transform 0.3s; 
+	  -moz-transition: -moz-transform 0.3s;
+	  transition: transform 0.3s;
+	  
+	  -webkit-transform-origin: 50% 0;
+	  -moz-transform-origin: 50% 0;
+	  transform-origin: 50% 0;
+	  
+	  -webkit-transform-style: preserve-3d;
+	  -moz-transform-style: preserve-3d;
+	  transform-style: preserve-3d;
+	  
+	 
+	  
+}
+
+.style_2 a span:before{
+	
+	content: attr(data-hover);
+	  box-sizing: border-box;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: #48acea;
+	  content: attr(data-hover);
+	  
+	  
+	  -webkit-transform: rotateX(-90deg);
+	  -moz-transform: rotateX(-90deg);
+	  transform: rotateX(-90deg);
+	  
+	  -webkit-transform-origin: 50% 0;
+	  -moz-transform-origin: 50% 0;
+	   transform-origin: 50% 0; 
+   	
+}
+
+/*hover*/
+.style_2 a:hover span
+{
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	-moz-transform: rotateX(90deg) translateY(-22px);
+	transform: rotateX(90deg) translateY(-22px);
+}
+
+
+
+
+
+

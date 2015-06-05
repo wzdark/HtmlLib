@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<script src="../lib/jquery/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/bootstrap-3.3.4-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.4-dist/css/bootstrap.css"/>
+		
+		<style type="text/css">
+			div{
+				margin: 10px 10px;
+			}
+			
+			.p{
+				height: 0;
+				overflow: hidden;
+				transition:width ease-out 0.2s;
+				-moz-transition:height ease-out 0.2s; /* Firefox 4 */
+				-webkit-transition:height ease-out 0.2s; /* Safari and Chrome */
+				-o-transition:height ease-out 0.2s; /* Opera */
+			}
+			
+			
+			
+			.p:target{
+				height: 50px;
+				
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="">
+			<h1>
+				<a href="#a">aaa</a>
+			</h1>
+			<div name='a' id='a' class="p">
+				<p>
+					a12131232134214134141341414
+				</p>
+			</div>
+			
+		</div>
+		<div id="">
+			<h1><a href="#b">bbb</a></h1>
+			<div name='b' id='b' class="p">
+				<p>
+					b12131232134214134141341414
+				</p>
+			</div>
+		</div>
+		
+		<div id="">
+			<h1><a href="#c">ccc</a></h1>
+			<div name='c' id='c' class="p">
+				<p>
+					c12131232134214134141341414
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
