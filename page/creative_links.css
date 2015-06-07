@@ -86,6 +86,7 @@
 
 .style_1 a::after{
 	content: ']';
+	left: 100%;
 }
 
 .style_1 a:hover::before{
