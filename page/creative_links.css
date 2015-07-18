@@ -10,6 +10,7 @@
 	
 }
 
+
 .prop{
 	display: inline-block;
 	width: 300px;
@@ -23,7 +24,13 @@
 	
 	text-align: center;
 	box-sizing: border-box;
-	
+	position: relative;
+}
+
+.item_block .title{
+	position: absolute;
+	left: 10px;
+	top: 10px;
 }
 
 .item_block a{
